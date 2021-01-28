@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Join our study group</h1>
+            <p id="description">
+                Thank you for taking the time to help improve our study group
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group name-field">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group email-field">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group age-field">
+                <label id="number-label" for="number">Age (optional)</label>
+                <input type="number" name="age" id="number" min="10" max="110" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label>Sex:</label>
+                <label>
+                    <input name="sex" value="female" type="radio" class="input-radio">
+                    Female
+                </label>
+                <label>
+                    <input name="sex" value="male" type="radio" class="input-radio">
+                    Male
+                </label>
+            </div>
+            <div class="form-group">
+                <label>How much time have you spent programming so far?</label>
+                <select id="dropdown" name="time" class="form-control" required>
+                    <option disabled selected value>Select the right one</option>
+                    <option value="0-month">0 months</option>
+                    <option value="0-4">0-4 months</option>
+                    <option value="4-8">4-8 months</option>
+                    <option value="8-12">8-12 months</option>
+                    <option value="1-2 year">1-2 years</option>
+                    <option value="more">2 years or more</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    What parts of programming are you interested in? (Check all that apply)
+                </label>
+                <label>
+                    <input name="parts" value="web-development-front" type="checkbox" class="input-checkbox">
+                    Web Developent (Front-end)
+                </label>
+                <label>
+                    <input name="parts" value="web-development-back" type="checkbox" class="input-checkbox">
+                    Web Developent (Back-end)
+                </label>
+                <label>
+                    <input name="parts" value="web-development-full" type="checkbox" class="input-checkbox">
+                    Web Developent (Full stack)
+                </label>
+                <label>
+                    <input name="parts" value="game-development" type="checkbox" class="input-checkbox">
+                    Game Development (mobile, console, desktop)
+                </label>
+                <label>
+                    <input name="parts" value="infosec" type="checkbox" class="input-checkbox">
+                    InfoSec / Hacking Security
+                </label>
+                <label>
+                    <input name="parts" value="reverse-engineering" type="checkbox" class="input-checkbox">
+                    Reverse Engineering
+                </label>
+                 <label>
+                    <input name="parts" value="data-visualization" type="checkbox" class="input-checkbox">
+                    Data Visualization
+                </label>
+                <label>
+                    <input name="parts" value="database-development" type="checkbox" class="input-checkbox">
+                    Database Development / Big Data / Data Analytics
+                </label>
+                <label>
+                    <input name="parts" value="mobile-development" type="checkbox" class="input-checkbox">
+                    Mobile Development (Android / IOS)
+                </label>
+                <label>
+                    <input name="parts" value="desktop-application-development" type="checkbox" class="input-checkbox">
+                    Desktop Application Development
+                </label>
+                <label>
+                    <input name="parts" value="robotics" type="checkbox" class="input-checkbox">
+                    Robotics
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Please write a few words about yourself, your learning habits!</label>
+                <textarea id="infos" class="input-textarea" name="info" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
